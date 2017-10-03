@@ -41,13 +41,13 @@ section#score div {
 
 
 
-.furry {
-  background-image: url('../images/furry.png');
+.magda {
+  background-image: url('../images/magda.png');
   background-repeat: no-repeat;
   background-size: cover;
 }
-.coin {
-  background-image: url('../images/coin.png');
+.food {
+  background-image: url('../images/food.png');
   background-repeat: no-repeat;
   background-size: cover;
 }
