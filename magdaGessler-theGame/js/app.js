@@ -2,7 +2,7 @@ console.log('hello')
 
 
 class Madga {
-    constructor(x, y, direction) {
+    constructor() {
         this.x = 0;
         this.y = 0;
         this.direction = "right";
@@ -17,20 +17,25 @@ class Food {
 }
 
 class Game {
+    constructor() {
+    this.board = document.querySelectorAll("#board div");
+    this.magda = new Magda();
+    this.food = new Food();
+    this.score = 0;
+    }
 
-    this.index = function(x,y) {
+    index(x,y) {
       return x + (y * 10);
     }
     showMadga() {
-        this.board[ this.index(this.magda.x,this.magda.y) ].classList.add('magda');
+        this.board[this.index(this.magda.x,this.magda.y)].classList.add('magda');
     }
 
     showFood() {
-        this.board[ this.index(this.magda.x,this.magda.y) ].classList.add('food');
+        this.board[this.index(this.food.x,this.food.y)].classList.add('food');
 
     }
-    const board = document.querySelectorAll("#board div");
-    const magda = new Magda();
-    const food = new Food();
-    const score = 0;
 }
+
+let theGame = new Game;
+theGame.showMadga()
